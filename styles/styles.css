@@ -267,6 +267,19 @@ body {
     margin: 0 auto;
     
 }
+@media print {
+#side-nav {
+    display: none;
+
+}
+#resume-wrapper {
+    left: 0;
+    padding: 1rem;
+}
+.skill {
+    flex-basis: 50%;
+}
+ }
 
     @media only screen and (max-width: 900px) {
 
