@@ -1,7 +1,8 @@
 :root {
     --name-font: 'Dosis', sans-serif;
     --title-font: 'Oswald', sans-serif;
-    --side-nav-color: black;
+    --side-nav-color: #6688A2;
+    --side-nav-text-color: black;
 
 
   }
@@ -138,10 +139,13 @@ body {
     padding: 1rem 2rem;
 }
 
-#resume header {
+.resume-header, .section-header {
     padding-bottom: 1rem;
     text-align:center;
     font-weight: bold;
+}
+.section-header {
+    font-size: 1.2rem;
 }
 #resume ul {
     margin-left: 2rem;
@@ -237,7 +241,7 @@ body {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 1.3rem;
-    color: #818181;
+    color: var(--side-nav-text-color);
     display: flex;
     flex-flow: row nowrap;
 }
@@ -251,11 +255,16 @@ body {
 #side-nav .nav-text {
     padding-left: .5rem;
 }
-#resume {
+#resume-wrapper {
     position: absolute;
     top: 0;
     left: 15rem;
-    margin-top: 2rem;
+    padding: 2rem;
+}
+#resume {
+
+    margin: 0 auto;
+    
 }
 
     @media only screen and (max-width: 900px) {
@@ -272,8 +281,12 @@ body {
         #side-nav .nav-text {
             display: none;
         }
-        #resume {
+        #resume-wrapper {
             left: 4.5rem;
+            padding: 1rem;
+        }
+        .skill {
+            flex-basis: 50%;
         }
       }
       @media only screen and (max-width: 700px) {
@@ -304,10 +317,16 @@ body {
         .social-media {
             margin-top: 2rem;
         }
-        #resume {
+        #resume-wrapper {
             position: relative;
             top: 0;
             left: 0;
+        }
+        .technical-content .label {
+            flex-basis: 100%;
+        }
+        .technical-content .description {
+            flex-basis: 100%;
         }
       }
       @media only screen and (max-width: 400px) {
@@ -323,7 +342,19 @@ body {
         .my-info span {
             word-wrap: break-word;
         }
+        .skill {
+            flex-basis: 100%;
+        }
+        #resume-wrapper {
+            padding: 1rem .5rem;
+        }
+        #resume {
+            font-size: .8rem;
+        }
+        .section-header {
+            font-size: 1rem;
+        }
 
- 
+
       }
     
