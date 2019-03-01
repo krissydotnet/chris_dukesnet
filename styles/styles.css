@@ -236,9 +236,20 @@ body {
     text-decoration: none;
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.3rem;
     color: #818181;
-    display: block;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#side-nav a:hover {
+    color: white;
+}
+#side-nav .nav-link i {
+    width: 2rem;
+   
+}
+#side-nav .nav-text {
+    padding-left: .5rem;
 }
 #resume {
     position: absolute;
@@ -255,7 +266,15 @@ body {
         .page-title h2 {
             font-size: 2rem;
         }
-
+        #side-nav {
+            width: 4.5rem;
+        }
+        #side-nav .nav-text {
+            display: none;
+        }
+        #resume {
+            left: 4.5rem;
+        }
       }
       @media only screen and (max-width: 700px) {
         .page-content {
@@ -266,7 +285,7 @@ body {
         h2.my-info {
             font-size: 1.5rem;
         }
-        .side-nav {
+        #side-nav {
             display: none;
         }
         .page-content {
