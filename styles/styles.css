@@ -25,7 +25,7 @@ body {
     }
 
     div#first{
-    background-image: url(/images/servers.jpeg);
+    background-image: url(../images/servers.jpeg);
     opacity:0.6;
     width:100vw;
     height:100vh;
