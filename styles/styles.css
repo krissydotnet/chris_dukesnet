@@ -32,8 +32,8 @@ body {
     }
 
     div#second{
-    width:100vw;
-    height:100vh;
+    width:100%;
+    height:100%;
     position:absolute;
     top: 0;
     left:0;
@@ -62,11 +62,15 @@ body {
         letter-spacing: .4rem;
         margin-bottom: 1rem;
     }
-
+    
     .my-info {
         font-family: var(--title-font); 
         font-weight: bold;
         font-size: 2.5rem;
+        max-width: 800px;
+    }
+    .my-info span {
+        white-space: nowrap;
     }
 
     .page-footer {
@@ -240,7 +244,7 @@ body {
     margin-top: 2rem;
 }
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 900px) {
 
         .page-title h1 {
             font-size: 4.2rem;
@@ -248,8 +252,18 @@ body {
         .page-title h2 {
             font-size: 2rem;
         }
+
+      }
+      @media only screen and (max-width: 700px) {
+
+        h2.my-info {
+            font-size: 1.5rem;
+        }
         .side-nav {
             display: none;
+        }
+        .page-content {
+            margin-left: 2rem;
         }
         #resume {
             position: relative;
@@ -259,12 +273,16 @@ body {
       }
       @media only screen and (max-width: 400px) {
 
-        .page-title h1 {
-            font-size: 3rem;
+        h1.my-name {
+            font-size: 2.5rem;
         }
-        .page-title h2 {
-            font-size: 1.2rem;
-            word-wrap: normal;
+        h2.my-info {
+            font-size: 1.4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .my-info span {
+            word-wrap: break-word;
         }
         .page-footer {
             flex-direction: column;
