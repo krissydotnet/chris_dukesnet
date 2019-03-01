@@ -1,7 +1,7 @@
 :root {
     --name-font: 'Dosis', sans-serif;
     --title-font: 'Oswald', sans-serif;
-    --side-nav-color: #6688A2;
+    --primary-color: #6688A2;
     --side-nav-text-color: black;
 
 
@@ -95,13 +95,14 @@ body {
         line-height: 4rem;
         text-align: center;
         margin-right: 5rem;
+        color: var(--primary-color);
     }
 
     a.button:hover {
         transform: Scale(1.1);
     }
     a.button:visited {
-        color: blue;
+        color: var(--primary-color);
     }
     .social-media {
         
@@ -112,12 +113,12 @@ body {
     .social-media i {
   
         border-radius: 50%;
-        background-color: blue;
+        background-color: var(--primary-color);
         padding: .5rem;
     }
     .social-media i:hover {
         background-color: white;
-        color: blue;
+        color: var(--primary-color);
     }
     .social-media a {
         color: white;
@@ -222,7 +223,7 @@ body {
     position: relative;
 }
 #side-nav {
-    background-color: var(--side-nav-color);
+    background-color: var(--primary-color);
     font-size: 1rem;
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 15rem; /* Set the width of the sidebar */
